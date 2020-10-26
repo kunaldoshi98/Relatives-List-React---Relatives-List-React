@@ -4,10 +4,14 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 class App extends Component {
   render() {
-    const relatives = ["Relative1", "Relative2", "Relative3"];
+    const relatives = [
+      "relativeListItem1",
+      "relativeListItem2",
+      "relativeListItem3"
+    ];
     return (
       <>
-        <ol key="RelativeName">
+        <ol key="relativeList">
           {relatives.map((relativeName, index) => (
             <ListItem key={`relatives-${index + 1}`}>
               <ListItemText primary={`Item ${relatives}`} />
