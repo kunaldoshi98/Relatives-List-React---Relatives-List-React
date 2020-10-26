@@ -1,6 +1,7 @@
 import React, { Component, useState } from "react";
 import "../styles/App.css";
 import ListItem from "@material-ui/core/ListItem";
+import ListItemText from "@material-ui/core/ListItemText";
 class App extends Component {
   render() {
     const relatives = ["Relative1", "Relative2", "Relative3"];
