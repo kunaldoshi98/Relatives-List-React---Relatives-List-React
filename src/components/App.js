@@ -8,7 +8,7 @@ class App extends Component {
       <>
         <ol>
           {relatives.map((city, index) => (
-            <li key={`location${index + 1}`}>{city}</li>
+            <li key={`location${index + 1}`}>{relatives}</li>
           ))}
         </ol>
       </>
