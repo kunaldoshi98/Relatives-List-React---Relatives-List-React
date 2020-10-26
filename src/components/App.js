@@ -1,7 +1,5 @@
 import React, { Component, useState } from "react";
 import "../styles/App.css";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
 class App extends Component {
   render() {
     const relatives = [
@@ -12,10 +10,8 @@ class App extends Component {
     return (
       <>
         <ol key="relativeList">
-          {relatives.map((relativeName, index) => (
-            <ListItem key={`relatives-${index}`}>
-              <ListItemText primary={`Item ${relatives}`} />
-            </ListItem>
+          {relatives.map((relative, index) => (
+            <li key={`location${relative}`}>{relatives}</li>
           ))}
         </ol>
       </>
