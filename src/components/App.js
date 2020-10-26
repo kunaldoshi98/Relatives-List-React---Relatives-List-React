@@ -6,7 +6,7 @@ class App extends Component {
     const relatives = ["Relative1", "Relative2", "Relative3"];
     return (
       <>
-        <ol>
+        <ol key="RelativeName">
           {relatives.map((relativeName, index) => (
             <ListItem key={`relatives${index + 1}`}>{relatives}</ListItem>
           ))}
