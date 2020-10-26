@@ -13,7 +13,7 @@ class App extends Component {
       <>
         <ol key="relativeList">
           {relatives.map((relativeName, index) => (
-            <ListItem key={`relatives-${index + 1}`}>
+            <ListItem key={`relatives-${index}`}>
               <ListItemText primary={`Item ${relatives}`} />
             </ListItem>
           ))}
